@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #C91D25;
+  --color-brand-dark: #171717;
+  --color-brand-light: #F7F7F7;
+  --color-brand-gray: #6B7280;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  body {
+    background-color: #FFFFFF;
+    color: #171717;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Red Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F7F7;
+}
+::-webkit-scrollbar-thumb {
+  background: #C91D25;
+  border-radius: 4px;
+}
